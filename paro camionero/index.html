@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Crucigramas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Juego de Crucigramas</h1>
+  <div id="game-container">
+    <h2 id="level-title">Nivel 1</h2>
+    <p id="timer">Tiempo: <span id="time">60</span> segundos</p>
+    <div id="crossword">
+      <!-- Aquí irá el crucigrama generado -->
+    </div>
+    <button id="hint-button">Obtener Pista</button>
+    <button id="next-level" disabled>Próximo Nivel</button>
+  </div>
+  
+  <audio id="win-sound" src="win-sound.mp3"></audio> <!-- Sonido de victoria -->
+  <audio id="crowd-sound" src="crowd-cheer.mp3"></audio> <!-- Sonido de multitud celebrando -->
+  
+  <!-- Script de confetti para fuegos artificiales -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.min.js"></script>
+  
+  <script src="game.js"></script>
+</body>
+</html>

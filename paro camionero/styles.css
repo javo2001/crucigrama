@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('fondo-paro-camionero.jpg'); /* Reemplaza con tu imagen */
+  background-size: cover;
+  background-position: center;
+}
+
+#game-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#timer {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#crossword {
+  display: grid;
+  grid-template-columns: repeat(5, 40px);
+  grid-gap: 5px;
+  justify-content: center;
+}
+
+#crossword div {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+}
+
+#hint-button {
+  margin-top: 15px;
+}
